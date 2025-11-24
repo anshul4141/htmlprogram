@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="ChangeSTyle.html" onsubmit="return validate(this)">
+        <label for="">Enter id to delete a record</label>
+        <input type="text" name="id" onchange="validate(this.form)" />
+        <input id="submitBtn" type="submit" value="Delete" />
+    </form>
+    <script>
+        function validate(frm) {
+            let i = frm.id.value;
+            let res = false;
+            if (i == "" || i == null) {
+
+                document.getElementById(" submitBtn").style.visibility = "hidden";
+                 alert("PLease eneter the value")
+                return res;
+            } else if (isNaN(i)) {
+                document.getElementById("submitBtn").style.visibility = "hidden";
+                alert("PLease eneter the value in numbers") 
+                return res;
+            } else {
+                document.getElementById("submitBtn").style.visibility = "visible"; 
+                res = confirm("Are you sure you want delete?");
+            } return res;
+        } </script>
+</body>
+
+</html>

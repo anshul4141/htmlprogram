@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+        }
+        #b1{
+            background-image: conic-gradient(red,yellow);
+        }
+        #b2{
+            background-image: conic-gradient(red 90deg,yellow 120deg);
+        }
+        #b3{
+            margin-top: 20px;
+            background-image: conic-gradient(from 45deg ,red 90deg,yellow 120deg, blue);
+        }
+
+        #b4{
+            margin-top: 20px;
+            background-image: conic-gradient(at 20% 30% ,red 0deg,red 90deg ,yellow 90deg,yellow 180deg, blue 180deg);
+        }
+        #b5{
+            background-image: repeating-conic-gradient(at 0% 0%,rgb(255, 183, 0) 3%, rgb(238, 255, 0) 5%);
+        }
+    </style>
+</head>
+<body>
+ <div id="b1"></div>
+ <div id="b2"></div>
+ <div id="b3"></div>
+ <div id="b4"></div>   
+ <div id="b5"></div>
+</body>
+</html>

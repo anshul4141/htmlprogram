@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Age Validator for Voting</h1>
+    <form action="" name="ageValidationForm">
+
+        <label for="age">Enter Age</label>
+        <input type="text" name="age" value="" onchange="ageValidation()">
+        <span id="error" style="color: red;"></span>
+        <input type="submit" value="Submit" onsubmit="ageValidation()">
+    </form>
+    <script>
+        function ageValidation() {
+            let frm = document.forms["ageValidationForm"]
+            let age = frm.age.value;
+            if (age === "") {
+                document.getElementById("error").innerHTML = "Age is require"
+            }
+            else if (isNaN(age)) {
+                document.getElementById("error").innerHTML = "Please Enter the age in Numbers. ";
+            } else if (age < 0) {
+                document.getElementById("error").innerHTML = "Bhai Negative age kabse hone lagi";
+            } else if (age > 0 && age < 18) {
+                document.getElementById("error").innerHTML = "pehle 18 k to ho jao fir aana"
+            } else if (age > 110) {
+                document.getElementById("error").innerHTML = "Well done, abhi tak jinda ho"
+                document.getElementById("error").style.color = "red";
+            } else {
+                document.getElementById("error").innerHTML = "you can cast vote"
+                document.getElementById("error").style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

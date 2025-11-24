@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cd= new Date();
+        document.write("<h1>Date:"+cd+"</h1>");
+        document.write("<h1>Date:"+cd.getDate()+"</h1>");
+        document.write("<h1>Day:"+cd.getDay()+"</h1>");
+        document.write("<h1>Year:"+cd.getFullYear()+"</h1>");
+        document.write("<h1>Month:"+cd.getMonth()+"</h1>");
+        document.write("<h1>Hours:"+cd.getHours()+"</h1>");
+        document.write("<h1>Min:"+cd.getMinutes()+"</h1>");
+        document.write("<h1>Sec:"+cd.getSeconds()+"</h1>");
+        document.write("<h1>Mili:"+cd.getMilliseconds()+"</h1>");
+
+
+        //Date to string
+        document.write("<h1>Date:"+cd.toDateString()+"</h1>");
+        document.write("<h1>Date:"+cd.toLocaleDateString()+"</h1>");
+        document.write("<h1>Time:"+cd.toTimeString()+"</h1>");
+        document.write("<h1>Time:"+cd.toLocaleTimeString()+"</h1>");
+        
+        //String to date
+        document.write("<h1>Date:"+new Date("March ,12, 2024")+"</h1>");
+        document.write("<h1>Date:"+new Date("12/3/2024")+"</h1>");
+   
+    </script>
+</body>
+</html>

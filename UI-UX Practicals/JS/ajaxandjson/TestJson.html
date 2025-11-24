@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //JavaScript OBject
+        let obj = { id: 1, name: "Rays" }
+        //JSON Object
+        let marksheet = { "Rollno": 1, "st name": "Ishan", "Physics": 89.8, "Chemistry": 90, "Maths": 99 }
+        document.write("<hr>Rollno" + marksheet.Rollno)
+        document.write("<hr>Name:" + marksheet["st name"])
+        document.write("<hr>Physics:" + marksheet.Physics)
+        document.write("<hr>Chemistry:" + marksheet["Chemistry"])
+        document.write("<hr>Maths Score:" + marksheet.Maths)
+
+        let person = {
+            "Is Student": true,
+            "MobileNUmbers": [9876543210, 8976504321],
+            "Friend": {
+                "Name": "sanat",
+                "Address": "Indore",
+                "MobileNumber": 78099065432
+            }
+        }
+        document.write("<hr>Is Student:" + person["Is Student"])
+        document.write("<hr>Mobile Number:" + person["MobileNUmbers"])
+        document.write("<hr>Friend's Details:"
+            + person.Friend.Name + "<br>Address="
+            + person.Friend.Address +
+            "<br>MobileNumber" + person.Friend.MobileNumber + "<hr>")
+
+        let arr = [12, 34, 45, 56, 78]
+        document.write(arr + "<br>")
+
+        //Object to String
+        let str = JSON.stringify(person)
+        document.write("<hr>:" + typeof (person) + "<hr>" + person)
+        document.write("<hr>:" + typeof (str) + "<hr>" + str)
+        let personObj = JSON.parse(str)
+        document.write("<hr>:" + typeof (personObj) + "<hr>" + personObj.MobileNUmbers)
+    </script>
+</body>
+
+</html>

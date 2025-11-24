@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo">here is your Timer</h1>
+    <h1 id="demo1">here is your Timer</h1>
+    <button onclick="startTimer()">StartTimer</button>
+    <button onclick="stopTimer()">StopTimer</button>
+    <script>
+        function getTimer() {
+            let d = new Date();
+            let time = d.toLocaleTimeString();
+            let heading=document.getElementById("demo")
+            console.log(heading)
+            heading.innerHTML=time;
+          
+        }
+        let t = 0
+        let t1=0
+        function startTimer() {
+            t = window.setInterval(getTimer, 1000)//call a function in a given interval
+            t1=setTimeout(stopTimer,15000)// call a function after the given time period
+        }
+        function stopTimer() {
+            clearInterval(t);
+            clearTimeout(t)
+            document.getElementById("demo1").innerHTML="Stop"
+        }
+    </script>
+</body>
+
+</html>

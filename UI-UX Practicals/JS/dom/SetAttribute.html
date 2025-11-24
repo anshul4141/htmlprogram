@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            /* height: 50%; */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/images/blog.png" alt="" onmouseenter="changeImage()">
+
+    <script>
+        function changeImage() {
+            let image = document.querySelector("img")
+            console.log(image)
+            // if(image.src=="http://127.0.0.1:5500/images/blog.png"){
+            //     image.src="http://127.0.0.1:5500/images/fb.png";
+            //     image.alt="Facebook";
+            // }else{
+            //     image.src="http://127.0.0.1:5500/images/blog.png"
+            //     image.alt="Blog"
+            // }
+            image.src = image.src == "http://127.0.0.1:5500/images/blog.png" ? "http://127.0.0.1:5500/images/fb.png" : "http://127.0.0.1:5500/images/blog.png"
+            image.alt = image.alt == "Facebook" ? "Blog" : "Facebook";
+        }
+    </script>
+</body>
+
+</html>
+<!-- http://127.0.0.1:5500/images/blog.png -->

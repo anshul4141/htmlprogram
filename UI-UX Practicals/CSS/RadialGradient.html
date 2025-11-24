@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body>div {
+            height: 200px;
+            /* width: 200px; */
+            border: 2px solid black;
+        }
+    
+   div#b1{
+    background-image: radial-gradient(red,yellow,blue);
+   }
+   #b2{
+    margin: auto;
+    width: 250px;
+    background-image: radial-gradient(circle,red,green,blue);
+   }
+   #b3{
+    background-image: radial-gradient(circle,red 45%, green 50%, blue 70%);
+   }
+   #b4{
+background-image: repeating-radial-gradient(black 5%,white 10%);
+   }
+   #b4{
+    height: 500px;
+    width: 500px;
+background-image: repeating-radial-gradient(circle,black 5%,white 10%, red 12%, blue 14%);
+   }
+   #b5{
+    background-image: radial-gradient(farthest-corner at 60% 5%, red,green);
+   }
+   #b6{
+    background-image: radial-gradient(closest-side at 20% 5%, red,green);
+   }
+   
+    </style>
+</head>
+
+<body>
+    <div id="b1"><h2>Rays</h2></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+    <div id="b6"></div>
+    <div id="b7"></div>
+</body>
+
+</html>

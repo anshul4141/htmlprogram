@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script src="customException1.js"></script>
+    <script>
+        function ValidateAge(a) {
+            if(age>=18){
+                document.write("Valid for voting:"+a);
+            }else{
+                try{
+                    throw new AgeError(a);
+
+                }catch(e){
+                    document.write("Error:"+e)
+                }
+            }
+        }
+        let age=parseInt(prompt("Enter your age"));
+        ValidateAge(age)
+    </script>
+</body>
+</html>

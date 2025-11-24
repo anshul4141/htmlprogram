@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            display: block;
+            width: 50%;
+            margin: auto;
+            border: 2px solid;
+            padding: 40px;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Age Validator for Voting</h1>
+        <form action="">
+            <label for="age">Enter Your age</label>
+            <input type="text" name="age" value="" placeholder="Age" onchange="ageValidator(this.form)" />
+            <span id="error" style="color:red;"></span>
+            <input type="submit" value="Submit" onclick="ageValidator(this.form)">
+        </form>
+    </div>
+    <script>
+        function ageValidator(frm) {
+            // console.log(frm)
+            let value = frm.age.value;
+            // console.log(value)
+            if(isNaN(value)){
+                //alert("Please enter age in Numbers");
+                document.getElementById("error").innerHTML="Please enter Age in Numbers.";
+            }
+        }
+    </script>
+</body>
+
+</html>

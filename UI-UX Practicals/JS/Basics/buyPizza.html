@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //only if block
+        // let budget = 200;
+        // let price = 400;
+        // if (budget >= price) {
+        //     document.write("<h1>You can buy Pizza</h1>")
+        // } else {
+        //     document.write("<h1>Can not Buy Pizza <br>budget is low" + budget)
+        //     document.write("<br>Pizza price is:" + price)
+        // }
+
+        //else-if-ladder
+        /*   let budget = 20
+           if (budget >= 400 && budget<500) {
+               document.write("<h1>You can buy Large size cheese Pizza");
+           } else if (budget >= 300) {
+               document.write("<h1>You can buy Medium size cheese Pizza");
+           } else if (budget >= 200) {
+               document.write("<h1>You can buy Small size cheese Pizza");
+           } else if (budget >= 100) {
+               document.write("<h1>You can buy Regular Pizza");
+           } else {
+               document.write("<h1>You can buy burgers above 50rs");
+           }
+   */
+        //Nested if-else
+        let pre = 99;
+        let criteria = 95;
+        if (pre < 0 || pre > 100) {
+            document.write("<h1>Please enter valid score between 0 and 100");
+            document.write("you have given :" + pre+" as your pre score")
+        } else {
+            if (pre >= criteria && pre <= 100) {
+                let mains = 97;
+                if (mains < 0 || mains > 100) {
+                    document.write("<h1>Please enter valid score between 0 and 100");
+                    document.write("you have given :" + mains+" as mains score")
+                } else {
+                    if (mains >= criteria && mains <= 100) {
+                        document.write("<h1>Your are selected for next round");
+                    } else {
+                        document.write("<h1>Your Mains score=" + mains + "is less than the criteria=" + criteria);
+                    }
+                }
+            }
+            else {
+                document.write("<h1>Your pre score=" + pre + " is less than the criteria=" + criteria)
+            }
+        }
+    </script>
+</body>
+
+</html>

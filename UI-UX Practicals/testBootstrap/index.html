@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="/images/developer.png" type="png">
+    <style>
+        .back {
+            height: 100vh;
+            background-image: url("/images/back.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+            position: relative;
+            /* opacity: ; */
+        }
+
+        .title {
+            font-size: 5rem;
+            /* color: white; */
+        }
+
+        .description {
+            font-size: 2rem;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+        .card:hover {
+            border: 2px double black;
+            /* color: ; */
+            background-color: #FFC700;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">Riya</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="demo">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="back" id="home">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col text text-danger">
+
+                    <h1 class="title">Hi,I am Riya</h1>
+                    <p class="description">I am Software Engineer,</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="text-bg-warning">
+        <div class="container pt-5">
+            <h1 class="text-center text-info">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="/images/d1.png" alt="about" style="width: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="row text-center">
+                        <div class="col-md-6 ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illo veniam vero inventore
+                                veritatis odit ipsam architecto omnis quia magnam eligendi repellendus, similique neque.
+                                Commodi saepe fuga delectus illum nisi!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, enim laboriosam nobis
+                                beatae laudantium debitis. Dicta asperiores minus iure officiis sed reprehenderit sit
+                                molestias aspernatur debitis nostrum quia, libero explicabo!</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5 p-5">
+                        <div class="col-md-12">
+                            <p class="text-bg-dark p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                                ducimus rem deleniti repellat
+                                porro tempora officiis! Voluptatum ea, eos quidem corporis veritatis voluptas eum
+                                suscipit,
+                                sint consectetur optio impedit, ex commodi cumque repellendus vitae ad ab perspiciatis
+                                tempora excepturi. Exercitationem quis veniam ullam vero magnam rem! Aspernatur
+                                temporibus
+                                mollitia minima.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="bg-danger">
+        <div class="container mt-3 pt-3">
+            <h1 class="text-center text-info">Services</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Web Developemet</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo ipsa tempora
+                                doloremque earum? Rem, ipsum? Explicabo a harum at sint, neque quibusdam perspiciatis
+                                voluptatibus nisi commodi omnis alias magnam repudiandae, illum iure dolorum ipsum sunt
+                                eius, inventore consequatur. Mollitia.</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">SEO</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo ipsa tempora
+                                doloremque earum? Rem, ipsum? Explicabo a harum at sint, neque quibusdam perspiciatis
+                                voluptatibus nisi commodi omnis alias magnam repudiandae, illum iure dolorum ipsum sunt
+                                eius, inventore consequatur. Mollitia.</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Website Design</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod aspernatur sit
+                                exercitationem. Cupiditate aut perferendis labore! Ea exercitationem architecto odit
+                                illum fugit quis, adipisci ex facere iusto ratione nisi consequuntur magni, iste fuga
+                                delectus atque soluta nulla commodi animi!</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Security</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod aspernatur sit
+                                exercitationem. Cupiditate aut perferendis labore! Ea exercitationem architecto odit
+                                illum fugit quis, adipisci ex facere iusto ratione nisi consequuntur magni, iste fuga
+                                delectus atque soluta nulla commodi animi!</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Blogging</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo asperiores,
+                                eligendi voluptatum officia possimus nostrum illum assumenda. Pariatur atque eaque
+                                beatae, itaque ab dolorem dicta dolor dolores optio, perferendis magni. Quaerat optio
+                                aliquid rerum nisi esse sed suscipit ipsum.</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Product Developement</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo asperiores,
+                                eligendi voluptatum officia possimus nostrum illum assumenda. Pariatur atque eaque
+                                beatae, itaque ab dolorem dicta dolor dolores optio, perferendis magni. Quaerat optio
+                                aliquid rerum nisi esse sed suscipit ipsum.</p>
+                            <button class="btn btn-dark">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="bg-primary" style="height: 100vh;">
+        <div class="container bg-primary">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/developer.png" alt="" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title">Online result system</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus
+                                nisi beatae libero consectetur molestiae obcaecati distinctio aperiam voluptates porro,
+                                delectus ratione dolorum animi architecto unde consequatur velit consequuntur cum.</p>
+                            <button class="btn btn-info">view Here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/developer.png" alt="" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title">Online result system</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus
+                                nisi beatae libero consectetur molestiae obcaecati distinctio aperiam voluptates porro,
+                                delectus ratione dolorum animi architecto unde consequatur velit consequuntur cum.</p>
+                            <button class="btn btn-info">view Here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/developer.png" alt="" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title">Online result system</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus
+                                nisi beatae libero consectetur molestiae obcaecati distinctio aperiam voluptates porro,
+                                delectus ratione dolorum animi architecto unde consequatur velit consequuntur cum.</p>
+                            <button class="btn btn-info">view Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section id="contact" class="text-bg-success">
+        <div class="container">
+            <h1 class="text-center">Contact me</h1>
+            <div class="row">
+                <!-- <div class="container"> -->
+                    <div class="col-md-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14716.228909870835!2d75.91148249999998!3d22.763257399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719570157518!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                <!-- </div> -->
+                <div class="col-md-6">
+                    <form action="">
+                        <label for="" class="form-label">Email</label>
+                        <input type="Email" class="form-control" placeholder="example@mail.coms">
+                        <label for="" class="form-label">Nameś</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                        <label for="" class="form-label">Mobile Numbre</label>
+                        <input type="text" class="form-control" placeholder="Mobile Number">
+                        <label for="" class="form-label">Address</label>
+                        <textarea name="" id="" class="form-control" rows="5"></textarea>
+                        <input type="submit" value="Submit" class="btn btn-warning mt-2">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="m-5" style="text-align: center;">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom ">
+            <!-- <div class="container-fluid d-block ms-auto"> -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#home" class="nav-link">
+                        <span class="bi bi-facebook"></span></a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">
+                        <span class="bi bi-github"></span>
+                    </a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">
+                        <span class="bi bi-instagram"></span>
+                    </a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">
+                        <span class="bi bi-linkedin"></span>
+                    </a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">
+                        <span class="bi bi-whatsapp"></span></a></li>
+            </ul>
+
+            <!-- </div> -->
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

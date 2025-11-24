@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="/JS/OOP/shape.js"></script>
+    <script>
+        class Rectangle extends Shape {
+            constructor(l,w, c, bw) {
+                super(c, bw);//super is used to call parent class constrcutor
+                this.length = l;
+                this.width=w;
+            }
+            setLength(l) {
+                this.length = l;
+            }
+            getLength() {
+                return this.length
+            }
+            setWidth(w) {
+                this.width = w;
+            }
+            getWidth() {
+                return this.width
+            }
+            //override the parent(Shape) class method in child(Circle)
+            area(){
+                return this.length*this.width;
+            }
+        }
+        let cir = new Rectangle(3,3 ,"Black", 4);
+        // cir.setRadius(3);
+        // cir.setColor("Red");
+        // cir.setBorderWidth(2);
+        document.write("Length=" + cir.getLength() + "<hr>")
+        document.write("Width=" + cir.getWidth() + "<hr>")
+        document.write("BW:" + cir.getBorderWidth() + "<hr>")
+        document.write("Color" + cir.getColor()+"<hr>");
+        document.write("Area:" + cir.area()+"<hr>");
+        
+    </script>
+</body>
+
+</html>

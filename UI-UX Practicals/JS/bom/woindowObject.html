@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello Window Object</h1>
+    <button onclick="openaRays()">Open Rays</button>
+    <button onclick="getHomePage()">Home Page</button>
+    <button onclick="getInfo()">Click Me</button>
+    <script>
+        document.write(window.document)
+        console.log(window.document + "<hr>")
+        document.write(window.location)
+        function openaRays() {
+            window.open("https://www.raystec.com/", "_blank")
+        }
+        function getHomePage() {
+            window.location.href = "http://127.0.0.1:5500/JS/Basics/buyPizza.html"
+        }
+        function getInfo() {
+            // window.alert("Alert box on cicking a button?");
+            // let res = window.confirm("Are you sure?");
+            // document.write(res);
+            let name = window.prompt("ENter your Name","pooja");
+            document.write("Hello :" + name);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ajax Call</h1>
+    <h3 id="demo">REplaced by Ajax</h3>
+    <button onclick="loadData()">Click Me</button>
+    <script>
+        function loadData(){
+            const xhttp=new XMLHttpRequest()
+            xhttp.onreadystatechange=function(){
+                if(xhttp.readyState==4 && xhttp.status==200){
+                    document.getElementById("demo").innerHTML=xhttp.responseText;
+                }
+            };
+            xhttp.open("GET","http://127.0.0.1:5500/JS/dom/ChangeSTyle.html",true);
+            xhttp.send()
+
+        }
+    </script>
+</body>
+</html>

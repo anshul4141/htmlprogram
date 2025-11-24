@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var: not block scoped
+        we can redeclare and reassign a variable
+        
+        */
+        /*
+        let:  block scoped
+        we can not redeclare  a variable
+        but we can reassign
+        */
+
+        let a = 1;
+        document.write(typeof (a) + "<hr>");
+        document.write(a + "<hr>")
+        var A = 12.4
+        let b;
+        // b=2;
+        document.write(typeof (A) + "<hr>");
+        document.write(A + "<hr>")
+        document.write(b + "<hr>")
+        // a="Ram"
+        var a1 = 'Ram'
+        document.write(typeof (a1) + "<hr>");
+        document.write(a1 + "<hr>")
+        var a2 = true
+        document.write(typeof (a2) + "<hr>");
+        document.write(a2 + "<hr>")
+        {
+            var name = "Rays"
+        }
+        document.write(name+"<hr>")
+        /*
+        const keyword is used to decalre constant
+        we can not redeclare
+        we can not reassign
+        */
+        const pi=3.14;
+        // pi=3.12
+        document.write(pi+"<hr>")
+    </script>
+</body>
+
+</html>

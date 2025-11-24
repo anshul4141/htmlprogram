@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script src="customException.js"></script>
+    <script>
+        
+        function validate(un,pwd){
+            if(uname==="Admin" && pwd==="pass1234"){
+                document.write("Welcome User:"+un);
+            }else{
+                try{
+                throw new LoginError(un);
+                }catch(e){
+                    document.write("Error message:"+e.message);
+                }
+            }
+        }
+
+        let uname=prompt("Enter Your name");
+        let password=prompt("Enter Your password");
+        validate(uname,password)
+    </script>
+</body>
+</html>

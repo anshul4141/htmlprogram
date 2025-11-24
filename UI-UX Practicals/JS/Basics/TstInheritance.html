@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="/JS/OOP/shape.js"></script>
+    <script>
+        class Circle extends Shape {
+            constructor(r, c, bw) {
+                super(c, bw);//supe is used to call parent class constrcutor
+                this.radius = r;
+            }
+            setRadius(r) {
+                this.radius = r;
+            }
+            getRadius() {
+                return this.radius
+            }
+            //override the parent(Shape) class method in child(Circle)
+            area(){
+                return Shape.PI*this.radius*this.radius;
+            }
+        }
+        let cir = new Circle(3, "Black", 4);
+        // cir.setRadius(3);
+        // cir.setColor("Red");
+        // cir.setBorderWidth(2);
+        document.write("Radius=" + cir.getRadius() + "<hr>")
+        document.write("BW:" + cir.getBorderWidth() + "<hr>")
+        document.write("Color" + cir.getColor()+"<hr>");
+        document.write("Area:" + cir.area()+"<hr>");
+        let s= new Shape("Gray",3)
+        document.write("COlor:"+s.getColor()+"<hr>")
+    </script>
+</body>
+
+</html>

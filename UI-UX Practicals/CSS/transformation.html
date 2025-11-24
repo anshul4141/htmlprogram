@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #bird {
+            height: 10%;
+            width: 10%;
+        }
+
+        #bird:hover {
+            transform: translate(400px);
+            transition-duration: 5s;
+
+        }
+
+        #lion {
+            border: 1px solid red;
+        }
+
+        #lion:hover {
+            margin-left: 100px;
+            /* transform: scaleY(0.5); */
+            /* transform: rotate(-360deg); */
+            /* transform: skew(180deg); */
+            transform: scale(1.5) rotate(360deg);
+            transition-duration: 5s;
+        }
+        .container{
+            margin: auto;
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            padding: 20px;
+            text-align: justify;
+        }
+        .container:hover{
+            transform: scale(1.5) rotate(360deg);
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2D transformations</h1>
+    <img id="bird" src="/images/bird.gif" alt="Lion Image" />
+    <br>
+    <img id="lion" src="/images/lion.jpg" alt="">
+    <div class="container">
+        <img id="logo" src="/images/logo.png" alt="">
+        <h1>About Rays</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ad modi voluptas nihil sunt aliquam minima,
+            illo tenetur sit. Deleniti sunt et amet beatae ad officiis culpa sequi. Nostrum, facilis cumque delectus
+            architecto velit possimus nulla maxime facere quia quam natus ullam atque corporis dicta libero doloremque
+            blanditiis sequi incidunt.</p>
+    </div>
+</body>
+
+</html>

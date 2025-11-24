@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exception Handling Example</title>
+</head>
+
+<body>
+    <h1>JavaScript Exception Handling Example</h1>
+    
+    <script>
+        let a = 5;
+        let b = 0;
+
+        try {
+            if (b === 0) {
+                throw new Error("Division by zero is not allowed.");
+            }
+            let div = a / b;
+            document.write("<hr>Division is: " + div);
+        } catch (e) {
+            document.write("<hr>Error: " + e);
+            document.write("<hr>Error Name: " + e.name);
+            document.write("<hr>Error Message: " + e.message);
+        } finally {
+            document.write("<hr>I am in the Finally block.");
+        }
+    </script>
+</body>
+
+</html>

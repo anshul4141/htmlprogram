@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+/* position: absolute; */
+            /* animation-name: colorChange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+            border-radius: 30%;
+
+        }
+        body{
+            background-color: aquamarine;
+        }
+
+        /* @keyframes colorChange {
+            from {
+                background-color: antiquewhite;
+            }
+
+            to {
+                background-color: red;
+            }
+        } */
+
+        @keyframes colorChange {
+            0% {
+                background-color: antiquewhite;
+                left: 0px;
+                top:0px;
+            }
+
+            20% {
+                background-color: blue;
+                top:0px;
+                left: 500px;
+            }
+
+            40% {
+                background-color: maroon;
+                top: 200px;
+                left: 500px;
+            }
+
+            60% {
+                background-color: olive;
+                /* transform: rotate(360deg); */
+                /* margin: auto; */
+                /* position: absolute; */
+                top: 200px;
+                left: 0px;
+            }
+
+            80% {
+                background-color: violet;
+                top: 0px;
+                left: 0px;
+            }
+
+            100% {
+                background-color: midnightblue;
+           opacity: 0%;
+        s    }
+        }
+        @media screen and (max-width:900px) and (min-width:600) {
+            body{
+                background-color: blue;
+            }
+            div.container{
+                margin: auto;
+            }
+        }
+        @media screen and (max-width:400px) {
+            body{
+                background-color:orange;
+            }
+            div.container{
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+</body>
+
+</html>

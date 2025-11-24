@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*descendent tag(space) that comes after the specified tag*/
+        div p {
+            color: red;
+        }
+
+        div span {
+            background-color: blue;
+        }
+
+        div a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /*child selector*/
+        div > p{
+            background-color: antiquewhite;
+        }
+        header>div{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><span>
+                <a href="">Home</a>
+                <a href="">Home</a>
+            </span>
+            <span>
+                <a href="">Home</a>
+                <a href="">Home</a>
+            </span>
+        </div>
+    </header>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa laudantium, magni debitis explicabo suscipit
+            at illo ex quis corporis quod!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa laudantium, magni debitis explicabo suscipit
+            at illo ex quis corporis quod!</p>
+    </div>
+    <div>
+        <h1>Heading 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+            dicta asperiores hic dolores odio nobis itaque earum sed, deleniti
+            veniam magnam consectetur non consequuntur nesciunt minima accusantium
+            quod numquam! Provident quidem sequi atque quibusdam ipsam nemo eos
+            repellat fugiat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+            dicta asperiores hic dolores odio nobis itaque earum sed, deleniti
+            veniam magnam consectetur non consequuntur nesciunt minima accusantium
+            quod numquam! Provident quidem sequi atque quibusdam ipsam nemo eos
+            repellat fugiat.
+        </p>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+                dicta asperiores hic dolores odio nobis itaque earum sed, deleniti
+                veniam magnam consectetur non consequuntur nesciunt minima accusantium
+                quod numquam! Provident quidem sequi atque quibusdam ipsam nemo eos
+                repellat fugiat.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #header {
+            /* width: 100px; */
+            background-color: black;
+            height: 100px;
+            text-align: center;
+            font-size: 1.5em;
+           border-radius: 50px;
+        }
+
+        h1 {
+            color: white;
+            animation-name: blinkerEffect;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes blinkerEffect {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Rays Technology</h1>
+    </div>
+
+</body>
+
+</html>

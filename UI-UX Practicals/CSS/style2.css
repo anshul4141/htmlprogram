@@ -1,0 +1,24 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    background-color: blue;
+    color: yellow;
+}
+
+p {
+    color: gray;
+    background-color: black;
+    text-align: justify;
+    /* text-align: left;
+    text-align: right;
+    text-align: center; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#btngroup {
+    display: flex;
+    justify-content: center;
+}

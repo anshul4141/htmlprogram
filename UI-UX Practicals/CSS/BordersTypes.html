@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+        }
+
+        div#b1 {
+            /*border shorthand property*/
+            border: 5px solid blue;
+
+        }
+
+        div#b2 {
+            /*Border-style:solid, dotted, dashed, double, none,hidden, inherit, grrove, ridge*/
+            border-width: 30px;
+            border-style: outset;
+            border-color: red;
+        }
+
+        #b3 {
+            border-top: 15px solid blue;
+            border-left: 10px dotted black;
+            border-right: 10px double orange;
+            border-bottom: 10px dashed purple;
+        }
+
+        #b4 {
+            /*single value will apply to all sides*/
+            /* border-width: 2px;
+            border-style: solid; */
+
+            /*If double values are specified: 
+            1st value: top-bottom, 2nd values: left-right*/
+            /* border-width: 5px 10px;
+            border-style: solid dashed; */
+
+            /*if 3 values are given:display: display
+1st value: top
+2nd value: right-left
+3rd Value: bottom
+*/
+            border-width: 10px 5px 15px;
+            border-style: solid dotted dashed;
+            border-color: red orange green blue;
+        }
+
+        #b5 {
+            /*thin thick medium*/
+            border-width: medium;
+            border-style: solid;
+            border-top-color: blue;
+            border-bottom-color: orange;
+        }
+
+        #b6{
+            height: 200px;
+            width: 200px;
+            border: 10px solid red;
+            border-radius: 110px;
+            background-color: yellow;
+            padding: 120px;
+            margin: auto;
+        }
+        #para1 {
+            color: #fa2;
+            text-align: justify;
+            border-right: 30px double;
+            padding-right: 20px;
+            border-right-color: brown;
+        }
+
+        #para2 {
+            color:brown;
+            text-align: justify;
+            border-left: 30px double;
+            padding-left: 20px;
+            border-left-color: #f92;
+            margin: 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+    <div id="b6">
+        Rays
+    </div>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae nobis voluptatibus error cumque
+        repudiandae ex quis. Deserunt rem repellat quod dolor in cum enim excepturi aliquid unde. Iure quibusdam aperiam
+        minus, ab eaque ratione animi at reiciendis consequatur repudiandae deserunt porro nemo debitis autem dolorum a
+        quam quas eveniet iusto molestias explicabo suscipit repellat corrupti mollitia. In magni voluptatem laboriosam
+        explicabo corporis tempore! Omnis non ipsum amet tenetur, voluptas animi maxime! Autem magni totam eligendi
+        impedit velit commodi amet asperiores vel aspernatur. Quia quas impedit repudiandae nihil blanditiis eligendi,
+        delectus sapiente velit cum ex explicabo commodi dolores reprehenderit possimus.</p>
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae nobis voluptatibus error cumque
+        repudiandae ex quis. Deserunt rem repellat quod dolor in cum enim excepturi aliquid unde. Iure quibusdam aperiam
+        minus, ab eaque ratione animi at reiciendis consequatur repudiandae deserunt porro nemo debitis autem dolorum a
+        quam quas eveniet iusto molestias explicabo suscipit repellat corrupti mollitia. In magni voluptatem laboriosam
+        explicabo corporis tempore! Omnis non ipsum amet tenetur, voluptas animi maxime! Autem magni totam eligendi
+        impedit velit commodi amet asperiores vel aspernatur. Quia quas impedit repudiandae nihil blanditiis eligendi,
+        delectus sapiente velit cum ex explicabo commodi dolores reprehenderit possimus.</p>
+
+</body>
+
+</html>

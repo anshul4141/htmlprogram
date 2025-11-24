@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="shape.js"></script>
+    <script>
+        //create the instance of Shape Type
+        let shape = new Shape();
+        shape.setColor("Red");
+        shape.setBorderWidth(2);
+        document.write("<h1>Color:" + shape.getColor() + "</h1>");
+        document.write("<h1>BorderWidth:" + shape.getBorderWidth() + "</h1>");
+        document.write("<h1>Color:" + shape.color + "</h1>");
+        document.write("<h1>BorderWidth:" + shape.borderWidth + "</h1>");
+        //class expression
+
+        let s = class Shape {
+            constructor() {
+                this.color = null;
+                this.borderWidth = 0;
+            }
+            setColor(color) {
+                this.color = color;
+            }
+            getColor() {
+                return this.color
+            }
+            setBorderWidth(bw) {
+                this.borderWidth = bw;
+            }
+            getBorderWidth() {
+                return this.borderWidth;
+            }
+        }
+
+        let s1 = new s();
+        s1.setBorderWidth(20);
+        s1.setColor("Black");
+        document.write("<h1>Color:" + s1.getColor() + "</h1>");
+        document.write("<h1>BorderWidth:" + s1.getBorderWidth() + "</h1>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Change text By clicking on below button</h1>
+    <h3 id="demo">text Here...</h3>
+    <h3>ANother Text</h3>
+    <button onclick="getText()">Click Me</button>
+    <button onclick="getByTag()">GetByTag</button>
+    <script>
+        function getText() {
+            let h1 = document.getElementById('demo')
+            console.log(h1);
+            h1.innerHTML = "this is changed by JS function";
+        }
+        function getByTag() {
+            let tags = document.getElementsByTagName('h3')
+            console.log(tags);
+            console.log(tags[0])
+            console.log(tags[1])
+            tags[1].innerHTML="Changed by getTag name js"
+
+        }
+    </script>
+</body>
+
+</html>

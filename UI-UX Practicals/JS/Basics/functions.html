@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //without argument and without return
+        function printHello() {
+            document.write("<h1>Hello To ALL</h1>");
+           
+        }
+        // how to call/execute a function: by function name
+        printHello();
+
+        //with argument and without return type
+        function printName(name) {
+            document.write("<h1 style='color:Red;'>Hello " + name + "</h1>")
+            return;
+        }
+        // printName("Sanat")
+        //with argument with return type
+        function add(a, b) {
+            return a + b;
+        }
+        // document.write("<h1>SUm is:" + add(2, 3) + "<h1>");
+
+        function areaofplot(l, w) {
+            return l * w;
+
+        }
+        function costOfBuilt(area) {
+            let costPerSqureFeet = 2000;
+            let totalCost = costPerSqureFeet * area;
+            return totalCost;
+        }
+        
+        area = areaofplot(50, 30)
+        document.write("Area of PLot:" + area)
+        cost = costOfBuilt(area)
+        document.write("Cost To built:" + cost);
+
+    </script>
+</body>
+
+</html>

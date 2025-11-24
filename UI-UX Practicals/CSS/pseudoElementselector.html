@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*pseudo element */
+        *::selection {
+            color: blue;
+            background-color: aliceblue;
+        }
+        #para1::first-letter{
+            color: red;
+            font-size: 50px;
+            font-family: serif;
+        }
+        p::first-line{
+            color: green;
+            font-size: 30px;
+        }
+        .content::first-letter{
+            font-size: 50px;
+            text-transform: lowercase;
+        }
+        /*selector::pseudo-element{
+                property:value;
+        }*/
+        /* mark{
+            background-color: aqua;
+        } */
+        ::marker{
+            color: red;
+            font-size: 50px;
+            
+        }
+        li{
+            list-style: square;
+        }
+        #para1::after{
+            content: url("/images/img1.jpeg");
+        }
+        h1::before{
+            content: "<----";
+            color:red;
+        }
+        h1::after{
+            content: "---->";
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item1</li>
+            <li>Item1</li>
+            <li>Item1</li>
+            <li>Item1</li>
+            <li>Item1</li>
+        </ul>
+        <h1>AboutUS</h1>
+        <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit eaque ut ullam adipisci earum rem,
+            minima nam libero at culpa, omnis iste! Dolorum debitis rerum ea, id magni quo consequatur saepe amet aut
+            dolorem iusto vel quae inventore magnam eaque nam quisquam alias quidem aspernatur quas, sint incidunt sed!
+            <mark>Lorem ipsum dolor sit amet</mark> consectetur adipisicing elit. Unde, iure
+            fugit. Eius eaque velit saepe sed est corporis necessitatibus labore?
+            Ullam numquam porro neque. Dolores deserunt molestias suscipit odio
+            tenetur.
+        </p>
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, iure
+            fugit. Eius eaque velit saepe sed est corporis necessitatibus labore?
+            Ullam numquam porro neque. Dolores deserunt molestias suscipit odio
+            tenetur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, iure
+            fugit. Eius eaque velit saepe sed est corporis necessitatibus labore?
+            Ullam numquam porro neque. Dolores deserunt molestias suscipit odio
+            tenetur.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        /* a:hover{
+            cursor: wait;
+            background-color: aqua;
+        } */
+        a:active {
+            color: green;
+        }
+
+        /*first child selector: if the element is the 1st child of any element*/
+        li:first-child {
+            color: aqua;
+        }
+        p:first-child{
+            font-size: 30px;
+            color: blue;
+        }
+
+        /* li:nth-child(3){
+            background-color: bisque;
+        } */
+
+        li:nth-child(even){
+            font-size: 50px;
+            color: blue;
+        }
+        li:nth-child(odd){
+            font-size: 50px;
+            color: rgb(0, 255, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="AttributeSelectors.html">Home</a>
+    <a href="#">About US</a>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates iure iusto maxime dolore quasi voluptas
+            corporis velit deserunt laboriosam porro.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates iure iusto maxime dolore quasi voluptas
+            corporis velit deserunt laboriosam porro.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates iure iusto maxime dolore quasi voluptas
+            corporis velit deserunt laboriosam porro.</p>
+    </div>
+    <embed src="Selectors.html" height=200px width="100%" frameborder=0 scroll=0>
+</body>
+
+</html>

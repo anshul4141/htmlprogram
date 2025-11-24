@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo" onmouseover="changecolorBlackToRed()" onmouseleave="changeBackTooriginal()">About Rays</h1>
+    <p id="text" onmouseenter="setStyle()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis odit recusandae beatae placeat
+        reprehenderit alias vero architecto dicta vel inventore?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis modi ipsam aspernatur obcaecati
+        molestiae reprehenderit vel esse corporis totam perspiciatis cum eveniet fugit, illum placeat molestias libero
+        veritatis aut in voluptate aliquam tempore. Ipsa ducimus optio maxime porro facilis. Atque fugit illum nesciunt!
+        Soluta quo dolorem molestias facilis autem?</p>
+    <script>
+        function changecolorBlackToRed() {
+            let ele = document.getElementById("demo")
+            ele.style.color = "Red";
+            ele.style.backgroundColor = "black";
+            //   ele.style.fontSize="50px";
+
+            // or
+            // document.getElementById("demo").style.color = "Red";
+            // document.getElementById("demo").style.backgroundColor = "black";
+
+        }
+        function changeBackTooriginal() {
+            let ele = document.getElementById("demo")
+            ele.style.color = "Black";
+            ele.style.backgroundColor = "white";
+        }
+        function setStyle() { 
+            let ele=document.getElementById("text")
+            ele.style.fontSize="20px";
+            ele.style.borderWidth="3px";
+            ele.style.borderStyle="solid";
+            ele.style.borderColor="red";
+            ele.style.color="blue";
+        }
+    </script>
+</body>
+
+</html>

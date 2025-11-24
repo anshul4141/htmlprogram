@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*attribute selector*/
+        /* [href]{
+            text-decoration: none;
+        } */
+        a[href] {
+            text-decoration: none;
+            background-color: aqua;
+        }
+
+        /*with attribute value*/
+        [title="heading"] {
+            font-style: italic;
+        }
+
+        /*start with specified character*/
+        [title^="h"] {
+            background-color: beige;
+        }
+
+        /*ends withg specified character*/
+        [title$="s"] {
+            color: orange
+        }
+
+        /*value present anyehere*/
+        [title*="i"] {
+            border: 2px solid;
+        }
+        /* select space seprated */
+        /* [class~="header"]{
+            background-color: bisque;
+        } */
+         /*select hyphen seprated */
+         h1[class|="header"]{
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header-container">Headings</h1>
+    <h1 class="header">Headings</h1>
+    <h1 title="heading1">Heading 1</h1>
+    <h1 title="headings">Attribute selectors</h1>
+    <a href="" title="links">Home</a>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Literal
+        let emp = { id: 1, name: 'Ram', salary: 20000000 }
+        document.write("<h1>Id:" + emp.id + "<hr>Name:" + emp['name'] + "<hr>Salary:" + emp.salary);
+
+        //constructor function
+        function employee() {
+            this.id = 2;
+            this.name = "Shyam";
+            this.salary = 1200000
+        }
+        let e = new employee();
+        document.write("<h1>Id:" + e.id + "<hr>Name:" + e['name'] + "<hr>Salary:" + e.salary);
+
+        //object class constrctor function
+        let emp1=new Object();
+        emp1.id=3;
+        emp1.name="RadheShyam";
+        emp1.salary=3000000;
+
+        document.write("<h1>Id:" + emp1.id + "<hr>Name:" + emp1['name'] + "<hr>Salary:" + emp1.salary);
+
+
+
+    </script>
+</body>
+
+</html>
