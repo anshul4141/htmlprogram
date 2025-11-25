@@ -1,0 +1,15 @@
+✅ Example 1: 12 columns = full width
+<div class="col-12">Full width</div>
+
+✅ Example 2: 6 + 6 = 12
+<div class="col-6">Half</div>
+<div class="col-6">Half</div>
+
+✅ Example 3: 4 + 4 + 4 = 12
+<div class="col-4">One-third</div>
+<div class="col-4">One-third</div>
+<div class="col-4">One-third</div>
+
+✅ Example 4: 3 + 9 = 12
+<div class="col-3">Sidebar</div>
+<div class="col-9">Main Content</div>
