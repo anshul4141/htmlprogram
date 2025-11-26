@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Registration</title>
+
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .bgImage {
+            background-image: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            padding-top: 120px;
+            /* Because header is fixed */
+            padding-bottom: 80px;
+            /* Because footer is fixed */
+        }
+
+        .input-group-addon {
+            box-shadow: 9px 8px 7px #001a33;
+        }
+
+        /* Header and Footer */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            background-image: linear-gradient(to bottom right, grey, black);
+        }
+
+        .e {
+            background: linear-gradient(135deg, #000428, #004e92);
+        }
+    </style>
+</head>
+
+<body class="bgImage">
+
+    <!-- ===================== HEADER ===================== -->
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top e">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.raystec.com/assets/img/rays/customLogoOuterglow.png" width="190" height="50">
+            </a>
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown" style="padding-right: 40px;">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">
+                        Hi, Guest
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="login.html"><i class="fa fa-sign-in-alt"></i> Login</a>
+                        <a class="dropdown-item" href="register.html"><i class="fa fa-registered"></i> User
+                            Registration</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ===================== HEADER END ===================== -->
+
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+                <div class="card input-group-addon">
+                    <div class="card-body">
+
+                        <h3 class="text-center text-primary pb-3">User Registration</h3>
+
+                        <!-- ================================================= -->
+                        <!-- STATIC SUCCESS MESSAGE -->
+                        <div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <h4>Record saved successfully!</h4>
+                        </div>
+
+                        <!-- STATIC ERROR MESSAGE -->
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <h4>Something went wrong!</h4>
+                        </div>
+                        <!-- ================================================= -->
+
+
+
+                        <!-- ===== FORM START ===== -->
+                        <form>
+
+                            <!-- FIRST NAME -->
+                            <label><b>First Name</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user-alt"></i></div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+
+                            <!-- LAST NAME -->
+                            <label><b>Last Name</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user-circle"></i></div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <label><b>Password</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-key"></i></div>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+
+                            <!-- CONFIRM PASSWORD -->
+                            <label><b>Confirm Password</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-key"></i></div>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+
+                            <!-- EMAIL -->
+                            <label><b>Email Id</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email Id">
+                            </div>
+
+                            <!-- MOBILE -->
+                            <label><b>Mobile No</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-phone-square"></i></div>
+                                </div>
+                                <input type="text" maxlength="10" class="form-control" placeholder="Mobile No">
+                            </div>
+
+                            <!-- GENDER -->
+                            <label><b>Gender</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-venus-mars"></i></div>
+                                </div>
+
+                                <select class="form-control">
+                                    <option selected disabled>Select Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+
+                            <!-- DOB -->
+                            <label><b>DOB</b> <span style="color:red">*</span></label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <!-- BUTTONS -->
+                            <div class="text-center">
+                                <button class="btn btn-success">Sign Up</button>
+                                <button class="btn btn-secondary">Reset</button>
+                            </div>
+
+                        </form>
+                        <!-- ===== FORM END ===== -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <!-- ===================== FOOTER ===================== -->
+    <div class="footer e">
+        <center>
+            <h5 style="margin: 1%;">&#169; RAYS Technologies 2025</h5>
+        </center>
+    </div>
+    <!-- ===================== FOOTER END ===================== -->
+
+</body>
+
+</html>

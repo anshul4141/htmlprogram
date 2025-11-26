@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User List (Admin Panel)</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 90px;
+            padding-bottom: 70px;
+            background: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* NAVBAR BLUE GRADIENT */
+        .e {
+            background: linear-gradient(135deg, #000428, #004e92);
+        }
+
+        /* FOOTER */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Wide Layout */
+        .big-container {
+            width: 95%;
+            margin: auto;
+        }
+
+        .search-row {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .table-wrap {
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top e">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.raystec.com/assets/img/rays/customLogoOuterglow.png" width="190" height="50">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2">
+            <span><i class="fa fa-bars" style="color: white; font-size: 28px;"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav ml-auto">
+
+                <!-- USER -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">User</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-circle"></i> Add User</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-friends"></i> User List</a>
+                    </div>
+                </li>
+
+                <!-- MARKSHEET -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Marksheet</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Add Marksheet</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-list"></i> Marksheet List</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-star"></i> Merit List</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-copy"></i> Get Marksheet</a>
+                    </div>
+                </li>
+
+                <!-- ROLE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Role</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-tie"></i> Add Role</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Role List</a>
+                    </div>
+                </li>
+
+                <!-- COLLEGE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">College</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-university"></i> Add College</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-building"></i> College List</a>
+                    </div>
+                </li>
+
+                <!-- COURSE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Course</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-book-open"></i> Add Course</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-list"></i> Course List</a>
+                    </div>
+                </li>
+
+                <!-- STUDENT -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Student</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-graduate"></i> Add Student</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Student List</a>
+                    </div>
+                </li>
+
+                <!-- FACULTY -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Faculty</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-tie"></i> Add Faculty</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Faculty List</a>
+                    </div>
+                </li>
+
+                <!-- TIMETABLE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Time Table</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-clock"></i> Add TimeTable</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-clock"></i> TimeTable List</a>
+                    </div>
+                </li>
+
+                <!-- SUBJECT -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Subject</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-book"></i> Add Subject</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-list"></i> Subject List</a>
+                    </div>
+                </li>
+
+                <!-- PROFILE -->
+                <li class="nav-item dropdown" style="padding-right: 40px;">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;">Hi, Admin</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-key"></i> Change Password</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid">
+
+        <center>
+            <h1 class="text-light font-weight-bold pb-3"><u>User List</u></h1>
+        </center>
+
+        <!-- Success Message Example -->
+        <div class="row mt-3">
+            <div class="col-md-4 offset-md-4 alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>Record saved successfully!</h4>
+            </div>
+        </div>
+
+        <!-- Error Message Example -->
+        <div class="row">
+            <div class="col-md-4 offset-md-4 alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>Something went wrong!</h4>
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="row search-row">
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Enter First Name">
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Enter Login Id">
+            </div>
+            <div class="col-md-3">
+                <select class="form-control">
+                    <option>-- Select Role --</option>
+                    <option>Admin</option>
+                    <option>Student</option>
+                    <option>Faculty</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary btn-md">Search</button>
+                <button class="btn btn-dark btn-md">Reset</button>
+                <button class="btn btn-warning btn-md">Add new</button>
+            </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="table-wrap table-responsive">
+            <table class="table table-bordered table-dark table-hover">
+                <thead class="text-center">
+                    <tr style="background:#8C8C8C;">
+                        <th width="10%">Select</th>
+                        <th width="5%">S.No</th>
+                        <th width="15%">First Name</th>
+                        <th width="15%">Last Name</th>
+                        <th width="20%">Login ID</th>
+                        <th width="10%">Gender</th>
+                        <th width="10%">Role</th>
+                        <th width="10%">DOB</th>
+                        <th width="5%">Edit</th>
+                    </tr>
+                </thead>
+
+                <tbody class="text-center">
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>Rohit</td>
+                        <td>Sharma</td>
+                        <td>rohit@gmail.com</td>
+                        <td>Male</td>
+                        <td>Admin</td>
+                        <td>10/10/2000</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>2</td>
+                        <td>Anshul</td>
+                        <td>Prajapati</td>
+                        <td>anshul@gmail.com</td>
+                        <td>Male</td>
+                        <td>Student</td>
+                        <td>22/07/2001</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>3</td>
+                        <td>Rohit</td>
+                        <td>Sharma</td>
+                        <td>rohit@gmail.com</td>
+                        <td>Male</td>
+                        <td>Admin</td>
+                        <td>10/10/2000</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>4</td>
+                        <td>Rohit</td>
+                        <td>Sharma</td>
+                        <td>rohit@gmail.com</td>
+                        <td>Male</td>
+                        <td>Admin</td>
+                        <td>10/10/2000</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>5</td>
+                        <td>Rohit</td>
+                        <td>Sharma</td>
+                        <td>rohit@gmail.com</td>
+                        <td>Male</td>
+                        <td>Admin</td>
+                        <td>10/10/2000</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="row mt-3" style="width: 95%; margin:auto;">
+            <div class="col-md-4">
+                <button class="btn btn-warning btn-md">Previous</button>
+            </div>
+            <!-- <div class="col-md-3">
+                <button class="btn btn-primary btn-md">Add New</button>
+            </div> -->
+            <div align="center" class="col-md-4">
+                <button class="btn btn-danger btn-md">Delete</button>
+            </div>
+            <div class="col-md-4 text-right">
+                <button class="btn btn-warning btn-md">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer e">
+        <h5> <span style="color: red;">&#169;</span> <span style="color: red;">R</span><span
+                style="color: black;">AYS</span> Technologies 2025</h5>
+    </div>
+
+</body>
+
+</html>
