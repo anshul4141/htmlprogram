@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="list">
+        <p>Item 1</p>
+    </div>
+
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            let newLine = document.createElement("p");
+            console.log("new element to be added: ", newLine);
+            newLine.innerHTML = "New Item Added";
+            document.getElementById("list").appendChild(newLine);
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- createElement("p") → naya <p> tag banata hai
+
+innerHTML → usme text set karta hai
+
+appendChild() → pura element list me add kar deta hai -->

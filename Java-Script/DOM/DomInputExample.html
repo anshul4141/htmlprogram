@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="login" name="login" placeholder="enter valid loginId">
+    <br>
+    <br>
+    <input type="text" id="password" placeholder="enter valid password">
+    <br>
+    <button onclick="signIn()">singIn</button>
+
+
+    <script>
+        function signIn() {
+
+            let loginId = document.getElementById("login").value;
+            let password = document.getElementById("password").value;
+
+            console.log("login: " + loginId)
+            console.log("password: " + password)
+
+            if (loginId == 'admin' && password == 'admin') {
+                alert('user login successfully..');
+            } else {
+                alert('login or password is invalid')
+            }
+
+        }
+    </script>
+</body>
+
+</html>

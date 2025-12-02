@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="message">Welcome to JavaScript!</h1>
+
+    <button onclick="readData()">Read Text</button>
+
+    <script>
+        function readData() {
+            let text = document.getElementById("message").innerHTML;
+            alert("Text is: " + text);
+            console.log("text is: ", text)
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- document.getElementById("message") → element pakadta hai
+
+.innerHTML → uska text read karta hai
+
+alert() → pop-up me show karta hai -->
